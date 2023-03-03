@@ -1,0 +1,4 @@
+dataclass_wizard==0.22.2
+requests==2.28.1
+simplejson==3.17.6
+termcolor==2.1.1
