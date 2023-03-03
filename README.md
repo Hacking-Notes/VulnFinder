@@ -16,7 +16,7 @@ git clone https://github.com/Hacking-Notes/VulnFinder
 
 3. Prepare Wappalyzer:
 ```
-cd POCHunter/api/wappalyzer
+cd VulnFinder/api/wappalyzer
 yarn install
 yarn run link
 ```
@@ -30,9 +30,9 @@ pip3 install -r requrements.txt
 
 5. Edit _tokens.json_ file, add your [GitHub](https://github.com/settings/tokens/) 
 and [NVD](https://nvd.nist.gov/developers/api-key-requested) tokens here.
-6. Run POCHunter:
+6. Run VulnFinderr:
 ```
-python3 pochunter.py [arguments] <url/host>
+python3 VulnFinder.py [arguments] <url/host>
 ```
 ## Credit
 
