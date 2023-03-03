@@ -35,7 +35,7 @@ and [NVD](https://nvd.nist.gov/developers/api-key-requested) tokens here.
 python3 VulnFinder.py [arguments] <url/host>
 ```
 ## Credit
-
+We want to give a big shoutout to the original code creator for laying the foundation!
 - <a href="https://github.com/SpiritOfSea/POCHunter">SpiritOfSea</a> ---> Original Creator
 
 ## Disclaimer
