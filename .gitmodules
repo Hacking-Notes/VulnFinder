@@ -1,0 +1,6 @@
+[submodule "wappalyzer"]
+	path = api/wappalyzer
+	url = https://github.com/wappalyzer/wappalyzer.git
+[submodule "api/wappalyzer"]
+	path = api/wappalyzer
+	url = https://github.com/wappalyzer/wappalyzer.git
