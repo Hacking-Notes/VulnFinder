@@ -9,19 +9,20 @@ from modules.printer import Printer
 from modules.structure import Technology
 
 
-class POCHunter:
+class VulnFinder:
     def __init__(self):
         self.host_manager = None
         self.loaded_flag = False
-        self.header = """======================================================
- _____   ____   _____ _    _             _            
-|  __ \ / __ \ / ____| |  | |           | |           
-| |__) | |  | | |    | |__| |_   _ _ __ | |_ ___ _ __ 
-|  ___/| |  | | |    |  __  | | | | '_ \| __/ _ \ '__|
-| |    | |__| | |____| |  | | |_| | | | | ||  __/ |   
-|_|     \____/ \_____|_|  |_|\__,_|_| |_|\__\___|_|                                                
-======================================================="""
-        self.version_info = """Author: Dzmitry Padabed\n\nPOCHunter is a tool to automate website scanning, finding \
+        self.header = """
+██╗   ██╗██╗   ██╗██╗     ███╗   ██╗███████╗██╗███╗   ██╗██████╗ ███████╗██████╗ 
+██║   ██║██║   ██║██║     ████╗  ██║██╔════╝██║████╗  ██║██╔══██╗██╔════╝██╔══██╗
+██║   ██║██║   ██║██║     ██╔██╗ ██║█████╗  ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝
+╚██╗ ██╔╝██║   ██║██║     ██║╚██╗██║██╔══╝  ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗
+ ╚████╔╝ ╚██████╔╝███████╗██║ ╚████║██║     ██║██║ ╚████║██████╔╝███████╗██║  ██║
+  ╚═══╝   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═╝     ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+                                                                                 
+        """
+        self.version_info = """Author: Dzmitry Padabed\n\nVulnFinder is a tool to automate website scanning, finding \
 corresponding web technologies versions and their vulnerabilities. Searches are made with the power of Wappy, \
 NVD and exploitDB."""
 
@@ -49,7 +50,7 @@ NVD and exploitDB."""
             self.default()
 
     def init_parser(self):
-        self.parser = argparse.ArgumentParser(prog="./POCHunter.py", description="Tool to automatically find web "
+        self.parser = argparse.ArgumentParser(prog="./VulnFinder.py", description="Tool to automatically find web "
                                                                                  "exploits' proofs of concept")
         self.parser.add_argument("hostname")
         self.parser.add_argument('-f', '--force', help="ignore cached results", action='store_true')
@@ -148,5 +149,5 @@ NVD and exploitDB."""
 
 
 if __name__ == "__main__":
-    POCHunter = POCHunter()
-    POCHunter.run()
+    VulnFinder = VulnFinder()
+    VulnFinder.run()
